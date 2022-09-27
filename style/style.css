@@ -120,6 +120,7 @@
 *{
     margin: 0 auto;
     padding: 0 auto;
+    list-style: none;
 }
 a{
     text-decoration: none;
@@ -136,13 +137,14 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 1.5em;
-    background: #205a9c  ;
+ 
     font-size: large;
     font-weight: bolder;
     color: white;
     width: 100%;
     z-index: 100;
     box-shadow: -0.4em 0.4em 5px rgba(1, 1, 1, 0.5);
+    background: linear-gradient(45deg, #002b6f 33%, #0D61BC 66%, #8AA9D6);
 }
 
 .header__inner {
@@ -171,8 +173,8 @@ header a{
 }
 
 header a:hover{
-    color: #9e6d46;
-    border-bottom: solid 2px #9e6d46;
+    color: #222222;
+    border-bottom: solid 2px #007bff;
 }
 .section-title{
     color: #08c;
@@ -197,7 +199,15 @@ header a:hover{
 }
 
 .autoservice_content_h1{
-    color: #ffa65e;
+    color: #e5e5e5;
+    text-align: left;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.autoservice_content_p{
+    font-size: 24px;
+    text-align: left;
+    color: #e5e5e5;
 }
 
 /* Услуги */
