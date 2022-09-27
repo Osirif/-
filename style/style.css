@@ -63,6 +63,7 @@ header a:hover{
     background-position: center;
     position: relative;
     align-content: center;
+    box-shadow:  -1px 5px 5px 0.5px #2a363b;
 }
 
 .autoservice_content{
@@ -83,7 +84,9 @@ header a:hover{
     text-align: center;
     font-weight:bold;
 }
-
+.main_usluga2{
+padding-bottom: 60px;
+}
 .main_usluga img{
 width: 13em;
 height: 11em;
@@ -439,5 +442,7 @@ footer {
     color: rgb(255, 255, 255);
 }
 .fon {
-    background-color: #dddddd;
+    background-color: #f4f4f4;
+    box-shadow:  0 5px 10px 0.5px #8e8e8e;
+    
 }
