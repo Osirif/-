@@ -397,6 +397,10 @@ footer {
     margin: 0 5px;
 }
 
+.social__icon .fa-whatsapp{
+    color: #139107;
+}
+
 .social__icon {
     margin-top: 15px;
 }
