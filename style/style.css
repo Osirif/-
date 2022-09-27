@@ -44,7 +44,7 @@ header a:hover{
     background-position: center;
     position: relative;
     align-content: center;
-    box-shadow: rgb(0, 0, 0);
+    box-shadow: inset 0 0 5px;
 }
 
 .autoservice_content{
