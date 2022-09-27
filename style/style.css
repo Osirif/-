@@ -6,13 +6,6 @@
 a{
     text-decoration: none;
 }
-
-h1{
-    font-size: 48px;
-    color: #d48f56;
-    text-align:center;
-}
-
 h2{
     font-size: 48px;
     color: #d48f56;
@@ -22,6 +15,7 @@ h2{
 
 /* Шапка */
 header{
+    position: fixed;
     display: flex;
     justify-content: space-between;
     padding: 1.5em;
@@ -29,7 +23,8 @@ header{
     font-size: large;
     font-weight: bolder;
     color: white;
-    position: fixed;
+    
+    width: 100%;
 
 }
 
