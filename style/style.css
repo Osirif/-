@@ -368,8 +368,10 @@ button{
 
 .main_open_form{
     display: flex;
+    padding-bottom: 20px;
     margin-right: 2em;
-    margin-bottom: 2em;
+    
+    
 }
 
 .btn{
