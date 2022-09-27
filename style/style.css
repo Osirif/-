@@ -6,6 +6,13 @@
 a{
     text-decoration: none;
 }
+
+h1{
+    font-size: 48px;
+    color: #d48f56;
+    text-align:center;
+}
+
 h2{
     font-size: 48px;
     color: #d48f56;
