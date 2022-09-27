@@ -120,6 +120,7 @@ border-radius: 5px;
     justify-content:space-between;
     text-align: center;
     padding: 2em;
+    box-shadow:  0 5px 10px 0.5px #2a363b7d; 
 }
 
 .reviews img{
