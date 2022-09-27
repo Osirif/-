@@ -392,7 +392,7 @@ footer {
 }
 
 .social__icon i {
-    color: #1899ea;
+    color: #08c;
     font-size: 24px;
     margin: 0 5px;
 }
@@ -415,4 +415,7 @@ footer {
 
 .social__icon-link i:hover {
     color: rgb(255, 255, 255);
+}
+.fon {
+    background-color: #dddddd;
 }
