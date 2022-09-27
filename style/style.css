@@ -413,5 +413,8 @@ margin-left: 12em;
     font-size: 30px;
 }
 .social__icon i {
-    color: rgb(19, 128, 236)
+    color: #08c;
+}
+.fa-whatsapp {
+    color: #25D366;
 }
