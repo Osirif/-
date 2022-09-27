@@ -64,7 +64,9 @@ header a:hover{
     text-align: center;
     font-weight:bold;
 }
-
+.main_usluga2{
+padding-bottom: 20px;
+}
 .main_usluga img{
 width: 13em;
 height: 11em;
