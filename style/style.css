@@ -199,46 +199,6 @@ button{
     margin-top: 2em;
 }
 
-/* Футер */
-footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: #2a363b;
-    align-items: center;
-    color: #fff;
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: auto;
-}
-
-.footer__social {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.social__icon i {
-    color: #d48f56;
-    font-size: 24px;
-    margin: 0 5px;
-}
-
-.social__icon {
-    margin-top: 15px;
-}
-
-.contact__list-item {
-    line-height: 2;
-}
-
-.contact__list-item i {
-    margin-right: 10px;
-}
-
-.social__icon-link i:hover {
-    color: rgb(255, 255, 255);
-}
-
 /* Логин стр */
 
 .log {
@@ -412,9 +372,43 @@ margin-left: 12em;
     margin-top: 1em;
     font-size: 30px;
 }
-.social__icon i {
-    color: #08c;
+
+/* Футер */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2a363b;
+    align-items: center;
+    color: #fff;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
 }
- i .fa-whatsapp {
-    color: #25D366;
+
+.footer__social {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.social__icon i {
+    color: #d48f56;
+    font-size: 24px;
+    margin: 0 5px;
+}
+
+.social__icon {
+    margin-top: 15px;
+}
+
+.contact__list-item {
+    line-height: 2;
+}
+
+.contact__list-item i {
+    margin-right: 10px;
+}
+
+.social__icon-link i:hover {
+    color: rgb(255, 255, 255);
 }
