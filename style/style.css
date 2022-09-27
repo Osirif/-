@@ -122,6 +122,13 @@ border-radius: 5px;
     padding: 2em;
     box-shadow:  0 5px 10px 0.5px #2a363b7d; 
 }
+.reviews_bg{
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+    padding: 2em;
+    box-shadow:  0 5px 10px 0.5px #2a363b7d; 
+}
 
 .reviews img{
     width: 16em;
