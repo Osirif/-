@@ -1,6 +1,6 @@
 <?php
 /* сбор инфы в секции */
-$zayavka=".";
+$zayavka="____";
 $marka = $_POST['marka'];
 $model = $_POST['model'];
 $problem = $_POST['problem'];
@@ -21,7 +21,7 @@ $chat_id = "-748247926";
 /* коды */
 
 $arr = array(
-  'ЗАЯВКА'=> $zayavka,
+  '____ЗАЯВКА'=> $zayavka,
   'Марка машины: ' => $marka,
   'Модель: ' => $model,
   'Описание проблемы:' => $problem,
