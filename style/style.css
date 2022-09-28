@@ -126,17 +126,23 @@ a{
     text-decoration: none;
 }
 h2{
-    font-size: 48px;
-    color: #d48f56;
-    text-align:center;
-    padding-top: 0.75em;
+    font-family: 'Rubik One', sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #02255f 33%, #0D61BC 66%, #8AA9D6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  display: table;
+  margin: 20px auto;
+
 }
 
 /* Шапка */
 header{
     display: flex;
     justify-content: space-between;
-    padding: 1.5em;
+    padding: 0.5em;
     font-size: large;
     font-weight: bolder;
     color: white;
@@ -144,6 +150,7 @@ header{
     z-index: 100;
     box-shadow: -0.4em 0.4em 5px rgba(1, 1, 1, 0.5);
     background: linear-gradient(45deg, #002b6f 33%, #0D61BC 66%, #8AA9D6);
+    align-items: center;
 }
 
 .header--fixed {
@@ -153,23 +160,33 @@ header{
     width: 100%;
   }
   
-  
-  
-  .header.is-show {
+.header.is-show {
     top: 20px; 
     opacity: 1; 
     z-index: 999;
-  }
+}
 
+.header__logo{
+    width: 5%;
+}
 
 header a{
     color: rgb(255, 255, 255);
 }
 
 header a:hover{
-    color: #222222;
+    color: #021f4e;
     border-bottom: solid 2px #007bff;
 }
+
+.white_a:hover{
+    color: #1875d8;
+}
+
+.logiin{
+    border-bottom: solid 2px #0063ce;
+}
+
 .section-title{
     color: #08c;
 }
@@ -251,18 +268,6 @@ border-radius: 5px;
     box-shadow:  0 5px 10px 0.5px #2a363b7d;
   
 }
-h2{
-  font-family: 'Rubik One', sans-serif;
-  font-size: 50px;
-  text-transform: uppercase;
-  background: linear-gradient(45deg, #02255f 33%, #0D61BC 66%, #8AA9D6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #0B2349;
-  display: table;
-  margin: 20px auto;
-
-}
 
 .reviews img{
     width: 16em;
@@ -270,72 +275,6 @@ h2{
     border-radius:70%;
 }
 
-/* Формы */
-/* .main_prezayavka{
-    text-align: center;
-    margin-right: 0px;
-    margin-top: 10em;
-    margin-left: -2em;
-}
-.main_prezayavka img{
-margin: 0;
-width: 50%;
-height: 30%;
-} */
-
-/* Форма заявки */
-
-.main_zayavka{
-    margin-right: 2em;
-}
-
-.main_forms{
-    display: flex;
-    justify-content: space-between;
-}
-
-.main 
-{
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 20px;
-  background: #fff;
-  border-radius: 10px;
-}
-  
-.main_zayavka > form:nth-child(1) > fieldset:nth-child(1) > legend:nth-child(1) > h2:nth-child(1) {
-    margin-top: 0px;
-  }
-fieldset
-{
-padding: 7em 7em 2em 7em;
-border: 2px solid #34495c;
-border-radius: 5px;
-flex: 0 0 30%;
-}
-
-fieldset legend{
-  color: #34495c;
-  font-weight: 500;
-  font-size: 20px;
-  font-family: 'Open Sans';
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.main_zayavka_form input, textarea
-{width: 100%;
-margin: 0px 0px 10px 0px;
-padding: 2px 5px;
-}
-
-.main_messege input{
-    margin-right: 10px ;
-}
 
 /* Форма вопроса */
 
@@ -547,17 +486,17 @@ margin-left: 12em;
 }
 
 /* Футер */
-footer {
+footer{
+    background: linear-gradient(45deg, #002b6f 33%, #0D61BC 66%, #8AA9D6);
+  }
+  
+  .footer__inner{
     display: flex;
     justify-content: space-between;
-    background-color: #2a363b;
     align-items: center;
     color: #fff;
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: auto;
-}
-
+    height: 100px;
+  }
 .footer__social {
     display: flex;
     flex-direction: column;
@@ -597,3 +536,79 @@ footer {
 .footer_user_cab {
     margin-top: 250px;
 }
+
+.contacts__inner{
+    display: flex;
+    justify-content: space-between;
+  
+    margin-bottom: 92px;
+  }
+  
+  .contacts__list{
+    list-style: none;
+  }
+  
+  .contacts__item{
+    margin-bottom: 20px;
+  }
+  
+  .contacts__item-title{
+    color: #5A0D67;
+  }
+  
+  .main_zayavka{
+    background: linear-gradient(45deg, #02255f 33%, #0D61BC 66%, #8AA9D6); ;
+    padding: 50px 75px 36px;
+    text-align: center;
+  }
+  
+  .form__title{
+    font-family: 'Rubik One', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    background: rgb(255, 255, 255);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  display: table;
+  margin: 20px auto;
+
+  }
+  
+  .contacts__title::after{
+    background-color: #fff;
+  }
+  
+  .main_zayavka input{
+    background-color: transparent;
+    width: 450px;
+    height: 75px;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-bottom: 12px;
+    display: block;
+    font-size: 24px;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  h3{
+    color: #fff;
+  }
+  
+  .contacts__input::placeholder{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #c4c4c4;
+  }
+  
+  .contacts__btn{
+    border: none;
+    color: #fff;
+    margin-top: 42px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+  }

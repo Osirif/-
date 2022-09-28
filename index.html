@@ -14,18 +14,19 @@
     <!-- шапка -->
     <header class="header header--fixed js-header">
         <div class="header__logo">
+            <img src="img/logo.svg" alt="logo">
         </div>
 
         <div class="header__services">
-            <a href="#services">Услуги</a>
+            <a href="#services" class="white_a">Услуги</a>
         </div>
 
         <div class="header__about">
-            <a href="#about">О нас</a>
+            <a href="#about" class="white_a">О нас</a>
         </div>
 
-        <div class="header__reviews">
-            <a href="">Отзывы</a>
+        <div class="header__review">
+            <a href="" class="white_a">Отзывы</a>
         </div>
 
         <div class="header__form">
@@ -37,9 +38,7 @@
         </div>
 
         <div class="header__login">
-            <a href="Login.html">Войти</a>
-            <span>/</span>
-            <a href="">Регистрация</a>
+            <a href="Login.html" class="logiin">Войти</a>
         </div>
     </header>
     <main>
@@ -135,85 +134,7 @@
 
         <!-- Форма заявки -->
         <h2 id="form">Оставьте свою заявку или задайте вопрос</h2>
-        <div class="main_zayavka">
-            <form action="telegram.php" method="POST" class="main">
-                <fieldset>
-                    <legend>
-                        <h1>Форма заявки</h1>
-                    </legend>
-                    <div class="main_zayavka_form">
-                        <label for="#">
-                            <h3>Марка авто<span style="color: red;" class="zvezda">*</span></h3>
-                        </label>
-                        <input type="text" name="marka" id="marka" required maxlength="255">
 
-                        <label for="#">
-                            <h3>Модель авто<span style="color: red;" class="zvezda">*</span></h3>
-                        </label>
-                        <input type="text" name="model" id="model" required maxlength="255">
-
-                        <label for="#">
-                            <h3>Описание проблемы<span style="color: red;" class="zvezda">*</span></h3>
-                        </label>
-                        <textarea name="problem" id="porblem" cols="30" rows="4" required maxlength="255"></textarea>
-
-                        <label for="#">
-                            <h3>Год выпуска авто<span style="color: red;" class="zvezda">*</span></h3>
-                        </label>
-                        <input type="text" name="date" id="text" required maxlength="10">
-
-                        <label for="#">
-                            <h3>Текущий пробег<span style="color: red;" class="zvezda">*</span></h3>
-                        </label>
-                        <input type="text" name="probeg" id="text" required maxlength="10">
-
-                        <div class="main_zayavka_form_name">
-
-                            <label for="#">
-                                <h3>Фамилия<span style="color: red;" class="zvezda">*</span></h3>
-                            </label>
-                            <input type="text" name="last_name" id="last_name" required maxlength="20">
-
-
-                            <label for="#">
-                                <h3>Имя<span style="color: red;" class="zvezda">*</span></h3>
-                            </label>
-                            <input type="text" name="name" id="name" required maxlength="10">
-
-                            <label for="#">
-                                <h3>Отчество<span style="color: red;" class="zvezda">*</span></h3>
-                            </label>
-                            <input type="text" name="middle_name" id="middle_name" required maxlength="25">
-
-                        </div>
-
-                        <label for="#">
-                            <h3>Телефон<span style="color: red;" class="zvezda">*</span></h3>
-                        </label>
-                        <input type="tel" name="tel" id="tel" placeholder="+7-(xxx)-xxx-xx-xx" required maxlength="10">
-
-                    </div>
-
-
-
-                    <label for="#">
-                        <h3>Способ связи<span class="zvezda">*</span></h3>
-                    </label>
-                    <div class="main_messege">
-                        <label for="#"> <input name="v1" access="false" id="v1-0" required="required"
-                                aria-required="true" value="option-1" type="radio">Telegram</label>
-                        <label for="#"> <input name="v1" access="false" id="v1-0" required="required"
-                                aria-required="true" value="option-1" type="radio">What's app</label>
-                        <label for="#"> <input name="v1" access="false" id="v1-0" required="required"
-                                aria-required="true" value="option-1" type="radio">По телефону</label>
-                    </div>
-                    <button type="submit">Отправить заявку</button>
-                </fieldset>
-            </form>
-        </div>
-        </div>
-        <div class="main_open_form"><button class="open-button" onclick="openForm()">Задать вопрос</button> </div>
-        </option>
 
         <!-- Форма вопроса -->
         <div class="main_vopros" id="myForm">
@@ -291,23 +212,139 @@
                 document.getElementById("myForm").style.display = "none";
             }
         </script>
-
     </main>
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__inner">
+                <div class="contacts__info">
+                    <h2 class="title">
+                        КОНТАКТЫ
+                    </h2>
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <p class="contacts__item-title">Адрес</p>
+                            <p class="contacts__item-text">
+                                Москва <br>
+                                ул. Константиновская, д.71
+                            </p>
+                        </li>
+                        <li class="contacts__item">
+                            <p class="contacts__item-title">Время работы</p>
+                            <p class="contacts__item-text">
+                                Пн-Сб: с 9:00 до 19:00, <br>
+                                Вс: выходной
+                            </p>
+                        </li>
+                        <li class="contacts__item">
+                            <p class="contacts__item-title">Телефон</p>
+                            <p class="contacts__item-text">
+                                +8(950) 555 66 77
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main_zayavka">
+                    <form action="telegram.php" method="POST" class="main">
+
+                        <legend>
+                            <h2 class="form__title">Форма заявки</h2>
+                        </legend>
+                        <div class="main_zayavka_form">
+                            <label for="#">
+                                <h3>Марка авто<span style="color: red;" class="zvezda">*</span></h3>
+                            </label>
+                            <input type="text" name="marka" id="marka" required maxlength="255">
+
+                            <label for="#">
+                                <h3>Модель авто<span style="color: red;" class="zvezda">*</span></h3>
+                            </label>
+                            <input type="text" name="model" id="model" required maxlength="255">
+
+                            <label for="#">
+                                <h3>Описание проблемы<span style="color: red;" class="zvezda">*</span></h3>
+                            </label>
+                            <textarea name="problem" id="porblem" cols="30" rows="4" required
+                                maxlength="255"></textarea>
+
+                            <label for="#">
+                                <h3>Год выпуска авто<span style="color: red;" class="zvezda">*</span></h3>
+                            </label>
+                            <input type="text" name="date" id="text" required maxlength="10">
+
+                            <label for="#">
+                                <h3>Текущий пробег<span style="color: red;" class="zvezda">*</span></h3>
+                            </label>
+                            <input type="text" name="probeg" id="text" required maxlength="10">
+
+                            <div class="main_zayavka_form_name">
+
+                                <label for="#">
+                                    <h3>Фамилия<span style="color: red;" class="zvezda">*</span></h3>
+                                </label>
+                                <input type="text" name="last_name" id="last_name" required maxlength="20">
+
+
+                                <label for="#">
+                                    <h3>Имя<span style="color: red;" class="zvezda">*</span></h3>
+                                </label>
+                                <input type="text" name="name" id="name" required maxlength="10">
+
+                                <label for="#">
+                                    <h3>Отчество<span style="color: red;" class="zvezda">*</span></h3>
+                                </label>
+                                <input type="text" name="middle_name" id="middle_name" required maxlength="25">
+
+                            </div>
+
+                            <label for="#">
+                                <h3>Телефон<span style="color: red;" class="zvezda">*</span></h3>
+                            </label>
+                            <input type="tel" name="tel" id="tel" placeholder="+7-(xxx)-xxx-xx-xx" required
+                                maxlength="10">
+
+                        </div>
+
+
+
+                        <label for="#">
+                            <h3>Способ связи<span class="zvezda">*</span></h3>
+                        </label>
+                        <div class="main_messege">
+                            <label for="#"> <input name="v1" access="false" id="v1-0" required="required"
+                                    aria-required="true" value="option-1" type="radio">Telegram</label>
+                            <label for="#"> <input name="v1" access="false" id="v1-0" required="required"
+                                    aria-required="true" value="option-1" type="radio">What's app</label>
+                            <label for="#"> <input name="v1" access="false" id="v1-0" required="required"
+                                    aria-required="true" value="option-1" type="radio">По телефону</label>
+                        </div>
+                        <button type="submit">Отправить заявку</button>
+
+                    </form>
+                </div>
+            </div>
+            <div class="main_open_form"><button class="open-button" onclick="openForm()">Задать вопрос</button> </div>
+            </option>
+        </div>
+        </div>
+    </section>
     <!-- Футер -->
     <footer>
-        <div class="footer__social">
-            <p>Мы в соцсетях:</p>
-            <div class="social__icon">
-                <a href="#" class="social__icon-link"> <i class="fa-brands fa-telegram"></i></a>
-                <a href="#" class="social__icon-link"> <i class="fa-brands fa-whatsapp"></i></a>
+        <div class="footer__inner">
+            <div class="footer__social">
+                <p>Мы в соцсетях:</p>
+                <div class="social__icon">
+                    <a href="#" class="social__icon-link"> <i class="fa-brands fa-telegram"></i></a>
+                    <a href="#" class="social__icon-link"> <i class="fa-brands fa-whatsapp"></i></a>
+                </div>
             </div>
-        </div>
-        <div class="footer__contact">
-            <ul class="contact__list">
-                <li class="contact__list-item"><i class="fa-solid fa-location-pin"></i>Екатеринбург, пр. Ленина, 49</li>
-                <li class="contact__list-item"><i class="fa-solid fa-clock"></i>9:00 - 24:00 ежедневно</li>
-                <li class="contact__list-item"><i class="fa-solid fa-phone-flip"></i>Телефон: 8-902-409-70-06</li>
-            </ul>
+            <div class="footer__contact">
+                <ul class="contact__list">
+                    <li class="contact__list-item"><i class="fa-solid fa-location-pin"></i>Екатеринбург, пр. Ленина, 49
+                    </li>
+                    <li class="contact__list-item"><i class="fa-solid fa-clock"></i>9:00 - 24:00 ежедневно</li>
+                    <li class="contact__list-item"><i class="fa-solid fa-phone-flip"></i>Телефон: 8-902-409-70-06</li>
+                </ul>
+            </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
