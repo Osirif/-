@@ -141,57 +141,43 @@
                                 <h1>Форма заявки</h1>
                             </legend>
                             <div class="main_zayavka_form">
-                                <label for="#">
-                                    <h3>Марка авто</h3>
-                                </label>
-                                <input type="text" name="marka" id="marka">
+                        <label for="#"><h3>Марка авто<span style="color: red;" class="zvezda">*</span></h3></label>
+                        <input type="text" name="marka" id="marka" required maxlength="255">
     
-                                <label for="#">
-                                    <h3>Модель авто</h3>
-                                </label>
-                                <input type="text" name="model" id="model">
+                        <label for="#"><h3>Модель авто<span style="color: red;" class="zvezda">*</span></h3></label>
+                        <input type="text" name="model" id="model" required maxlength="255">
     
-                                <label for="#">
-                                    <h3>Описание проблемы</h3>
-                                </label>
-                                <textarea name="problem" id="porblem" cols="30" rows="4"></textarea>
+                        <label for="#"><h3>Описание проблемы<span style="color: red;" class="zvezda">*</span></h3></label>
+                        <textarea name="problem" id="porblem" cols="30" rows="4" required maxlength="255"></textarea>
     
-                                <label for="#">
-                                    <h3>Год выпуска</h3>
-                                </label>
-                                <input type="date" name="date" id="date">
+                        <label for="#"><h3>Год выпуска авто<span style="color: red;" class="zvezda">*</span></h3></label>
+                        <input type="text" name="date" id="text" required maxlength="10">
     
-                                <label for="#">
-                                    <h3>Текущий пробег</h3>
-                                </label>
-                                <input type="number" name="number" id="number">
+                        <label for="#"><h3>Текущий пробег<span style="color: red;" class="zvezda">*</span></h3></label>
+                        <input type="text" name="probeg" id="text" required maxlength="10">
+                        
+                        <div class="main_zayavka_form_name">
+                            
+                            <label for="#"><h3>Фамилия<span style="color: red;" class="zvezda">*</span></h3></label>
+                            <input type="text" name="last_name" id="last_name" required maxlength="20">
+        
+
+                            <label for="#"><h3>Имя<span style="color: red;" class="zvezda">*</span></h3></label>
+                            <input type="text" name="name" id="name" required maxlength="10">
+                            
+                            <label for="#"><h3>Отчество<span style="color: red;" class="zvezda">*</span></h3></label>
+                            <input type="text" name="middle_name" id="middle_name" required maxlength="25">
+                            
+                        </div>
     
-                                <div class="main_zayavka_form_name">
-                                    <label for="#">
-                                        <h3>Имя</h3>
-                                    </label>
-                                    <input type="text" name="name" id="name">
-    
-                                    <label for="#">
-                                        <h3>Фамилия</h3>
-                                    </label>
-                                    <input type="text" name="last_name" id="last_name">
-    
-                                    <label for="#">
-                                        <h3>Отчество</h3>
-                                    </label>
-                                    <input type="text" name="middle_name" id="middle_name">
-                                </div>
-    
-                                <label for="#">
-                                    <h3>Телефон</h3>
-                                </label>
-                                <input type="tel" name="tel" id="tel" placeholder="+7-(xxx)-xxx-xx-xx">
-    
-                            </div>
-                            <label for="#">
-                                <h3>Способ связи</h3>
-                            </label>
+                        <label for="#"><h3>Телефон<span  style="color: red;" class="zvezda">*</span></h3></label>
+                        <input type="tel" name="tel" id="tel" placeholder="+7-(xxx)-xxx-xx-xx" required maxlength="10">
+
+                    </div> 
+
+
+
+                    <label for="#"><h3>Способ связи<span class="zvezda">*</span></h3></label>
                             <div class="main_messege">
                                 <label for="#"> <input name="v1" access="false" id="v1-0" required="required"
                                         aria-required="true" value="option-1" type="radio">Telegram</label>
@@ -209,60 +195,60 @@
 
             <!-- Форма вопроса -->
             <div class="main_vopros" id="myForm">
-                <form action="telegram_1.php" method="POST" class="main">
+                <form action="telegram_1.php" method="POST">
                     <fieldset>
                         <legend>
-                            <h1>Форма вопроса</h1>
+                            <h2>Форма вопроса</h2>
                         </legend>
                         <div class="main_zayavka_form">
                             <label for="#">
-                                <h3>Марка авто</h3>
+                                <h3>Марка авто<span style="color: red;" class="zvezda">*</span></h3>
                             </label>
-                            <input type="text" name="marka" id="marka">
+                            <input type="text" name="marka" id="marka" required maxlength="25">
 
                             <label for="#">
-                                <h3>Модель авто</h3>
+                                <h3>Модель авто<span style="color: red;" class="zvezda">*</span></h3>
                             </label>
-                            <input type="text" name="model" id="model">
+                            <input type="text" name="model" id="model" required maxlength="35">
 
                             <label for="#">
-                                <h3>Описание проблемы</h3>
+                                <h3>Описание проблемы<span style="color: red;" class="zvezda">*</span></h3>
                             </label>
-                            <textarea name="problem" id="porblem" cols="30" rows="4"></textarea>
+                            <textarea name="problem" id="porblem" cols="30" rows="4" required maxlength="255"> </textarea>
 
                             <div class="main_zayavka_form_name">
                                 <label for="#">
-                                    <h3>Имя</h3>
+                                    <h3>Имя<span style="color: red;" class="zvezda">*</span></h3>
                                 </label>
-                                <input type="text" name="name" id="name">
+                                <input type="text" name="name" id="name" required maxlength="20">
 
                                 <label for="#">
-                                    <h3>Фамилия</h3>
+                                    <h3>Фамилия<span style="color: red;" class="zvezda">*</span></h3>
                                 </label>
-                                <input type="text" name="last_name" id="last_name">
+                                <input type="text" name="last_name" id="last_name" required maxlength="25">
 
                                 <label for="#">
-                                    <h3>Отчество</h3>
+                                    <h3>Отчество<span style="color: red;" class="zvezda">*</span></h3>
                                 </label>
-                                <input type="text" name="middle_name" id="middle_name">
+                                <input type="text" name="middle_name" id="middle_name" required maxlength="35">
                             </div>
 
                             <label for="#">
-                                <h3>Телефон</h3>
+                                <h3>Телефон<span style="color: red;" class="zvezda">*</span></h3>
                             </label>
-                            <input type="tel" name="tel" id="tel" placeholder="+7-(xxx)-xxx-xx-xx">
+                            <input type="tel" name="tel" id="tel" placeholder="+7-(xxx)-xxx-xx-xx" required maxlength="10">
 
                             <label for="#">
-                                <h3>Способ связи</h3>
+                                <h3>Способ связи<span style="color: red;" class="zvezda">*</span></h3>
                             </label>
                         </div>
                         <div class="main_messege">
                             <label for="#"> <input name="v1" access="false" id="v1-0" required="required"
-                                    aria-required="true" value="option-1" type="radio">Telegram</label>
+                                    aria-required="true" value="Телеграм" type="radio">Telegram</label>
                             <label for="#"> <input name="v1" access="false" id="v1-0" required="required"
-                                    aria-required="true" value="option-1" type="radio">What's app</label>
+                                    aria-required="true" value="Ватсап" type="radio">What's app</label>
                             <label for="#"> <input name="v1" access="false" id="v1-0" required="required"
-                                    aria-required="true" value="option-1" type="radio">По телефону</label>
+                                    aria-required="true" value="По телефону" type="radio">По телефону</label>
                         </div>
                         <button type="submit">Задать вопрос</button>
                         <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
