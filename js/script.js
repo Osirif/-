@@ -1,18 +1,10 @@
-$(function() {
-  let header = $('.header');
-  let hederHeight = header.height(); // вычисляем высоту шапки
-   
-  $(window).scroll(function() {
-    if($(this).scrollTop() > 1) {
-     header.addClass('header_fixed');
-     $('body').css({
-        'paddingTop': hederHeight+'px' // делаем отступ у body, равный высоте шапки
-     });
-    } else {
-     header.removeClass('header_fixed');
-     $('body').css({
-      'paddingTop': 0 // удаляю отступ у body, равный высоте шапки
-     })
-    }
-  });
- });
+// Событие, которое отслеживает скроллит ли человек.
+document.addEventListener('scroll', function () {
+  if ($(window).scrollTop() > 1000)) {
+    // если больше 1000 → добавляем класс
+    $('.js-header-fixed').addClass('is-show');
+  } else {
+    // если меньше 1000 → удаляем класс
+    $('.js-header-fixed').removeClass('is-show');
+  }    
+}) 
