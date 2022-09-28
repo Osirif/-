@@ -132,86 +132,6 @@
             </div>
         </div>
 
-        <!-- Форма заявки -->
-        <h2 id="form">Оставьте свою заявку или задайте вопрос</h2>
-
-
-        <!-- Форма вопроса -->
-        <div class="main_vopros" id="myForm">
-            <form action="telegram_1.php" method="POST" class="main">
-                <fieldset>
-                    <legend>
-                        <h1>Форма вопроса</h1>
-                    </legend>
-                    <div class="main_zayavka_form">
-                        <label for="#">
-                            <h3>Марка авто<span style="color: red;" class="zvezda">*</span></h3>
-                        </label>
-                        <input type="text" name="marka" id="marka" required maxlength="25">
-
-                        <label for="#">
-                            <h3>Модель авто<span style="color: red;" class="zvezda">*</span></h3>
-                        </label>
-                        <input type="text" name="model" id="model" required maxlength="35">
-
-                        <label for="#">
-                            <h3>Описание проблемы<span style="color: red;" class="zvezda">*</span></h3>
-                        </label>
-                        <textarea name="problem" id="porblem" cols="30" rows="4" required maxlength="255"> </textarea>
-
-                        <div class="main_zayavka_form_name">
-                            <label for="#">
-                                <h3>Имя<span style="color: red;" class="zvezda">*</span></h3>
-                            </label>
-                            <input type="text" name="name" id="name" required maxlength="20">
-
-                            <label for="#">
-                                <h3>Фамилия<span style="color: red;" class="zvezda">*</span></h3>
-                            </label>
-                            <input type="text" name="last_name" id="last_name" required maxlength="25">
-
-                            <label for="#">
-                                <h3>Отчество<span style="color: red;" class="zvezda">*</span></h3>
-                            </label>
-                            <input type="text" name="middle_name" id="middle_name" required maxlength="35">
-                        </div>
-
-                        <label for="#">
-                            <h3>Телефон<span style="color: red;" class="zvezda">*</span></h3>
-                        </label>
-                        <input type="tel" name="tel" id="tel" placeholder="+7-(xxx)-xxx-xx-xx" required maxlength="10">
-
-                        <label for="#">
-                            <h3>Способ связи<span style="color: red;" class="zvezda">*</span></h3>
-                        </label>
-                    </div>
-                    <div class="main_messege">
-                        <label for="#"> <input name="v1" access="false" id="v1-0" required="required"
-                                aria-required="true" value="Телеграм" type="radio">Telegram</label>
-                        <label for="#"> <input name="v1" access="false" id="v1-0" required="required"
-                                aria-required="true" value="Ватсап" type="radio">What's app</label>
-                        <label for="#"> <input name="v1" access="false" id="v1-0" required="required"
-                                aria-required="true" value="По телефону" type="radio">По телефону</label>
-                    </div>
-                    <button type="submit">Задать вопрос</button>
-                    <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
-                </fieldset>
-            </form>
-        </div>
-        <script>
-            document.getElementById('number').onkeydown = function (e) {
-                return !(/^[А-Яа-яA-Za-z ]$/.test(e.key));  // IE > 9
-            }
-        </script>
-        <script>
-            function openForm() {
-                document.getElementById("myForm").style.display = "block";
-            }
-
-            function closeForm() {
-                document.getElementById("myForm").style.display = "none";
-            }
-        </script>
     </main>
     <section class="contacts">
         <div class="container">
@@ -243,9 +163,9 @@
                         </li>
                     </ul>
                 </div>
+                <!-- Форма заявки -->
                 <div class="main_zayavka">
                     <form action="telegram.php" method="POST" class="main">
-
                         <legend>
                             <h2 class="form__title">Форма заявки</h2>
                         </legend>
@@ -303,28 +223,102 @@
                                 maxlength="10">
 
                         </div>
-
-
-
                         <label for="#">
                             <h3>Способ связи<span class="zvezda">*</span></h3>
                         </label>
                         <div class="main_messege">
                             <label for="#"> <input name="v1" access="false" id="v1-0" required="required"
-                                    aria-required="true" value="option-1" type="radio"><span class="main__span">Telegram</span></label>
+                                    aria-required="true" value="option-1" type="radio"><span
+                                    class="main__span">Telegram</span></label>
                             <label for="#"> <input name="v1" access="false" id="v1-0" required="required"
-                                    aria-required="true" value="option-1" type="radio"><span class="main__span">What's app</span></label>
+                                    aria-required="true" value="option-1" type="radio"><span class="main__span">What's
+                                    app</span></label>
                             <label for="#"> <input name="v1" access="false" id="v1-0" required="required"
-                                    aria-required="true" value="option-1" type="radio"><span class="main__span">По телефону</span></label>
+                                    aria-required="true" value="option-1" type="radio"><span class="main__span">По
+                                    телефону</span></label>
                         </div>
                         <button type="submit" class="form__btn">Отправить заявку</button>
 
                     </form>
                 </div>
+                <!-- Форма вопроса -->
+                <div class="main_vopros  zayavka_v" id="myForm">
+                    <form action="telegram_1.php" method="POST" class="main">
+                        <div class="main_zayavka vopros">
+                            <h2 class="form__title">Форма вопроса</h2>
+                            <label for="#">
+                                <h3>Марка авто<span style="color: red;" class="zvezda">*</span></h3>
+                            </label>
+                            <input type="text" name="marka" id="marka" required maxlength="25">
+
+                            <label for="#">
+                                <h3>Модель авто<span style="color: red;" class="zvezda">*</span></h3>
+                            </label>
+                            <input type="text" name="model" id="model" required maxlength="35">
+
+                            <label for="#">
+                                <h3>Описание проблемы<span style="color: red;" class="zvezda">*</span></h3>
+                            </label>
+                            <textarea name="problem" id="porblem" cols="30" rows="4" required
+                                maxlength="255"> </textarea>
+
+                            <div class="main_zayavka_form_name">
+                                <label for="#">
+                                    <h3>Имя<span style="color: red;" class="zvezda">*</span></h3>
+                                </label>
+                                <input type="text" name="name" id="name" required maxlength="20">
+
+                                <label for="#">
+                                    <h3>Фамилия<span style="color: red;" class="zvezda">*</span></h3>
+                                </label>
+                                <input type="text" name="last_name" id="last_name" required maxlength="25">
+
+                                <label for="#">
+                                    <h3>Отчество<span style="color: red;" class="zvezda">*</span></h3>
+                                </label>
+                                <input type="text" name="middle_name" id="middle_name" required maxlength="35">
+                            </div>
+
+                            <label for="#">
+                                <h3>Телефон<span style="color: red;" class="zvezda">*</span></h3>
+                            </label>
+                            <input type="tel" name="tel" id="tel" placeholder="+7-(xxx)-xxx-xx-xx" required
+                                maxlength="10">
+
+                            <label for="#">
+                                <h3>Способ связи<span style="color: red;" class="zvezda">*</span></h3>
+                            </label>
+
+                            <div class="main_messege">
+                                <label for="#"> <input name="v1" access="false" id="v1-0" required="required"
+                                        aria-required="true" value="Телеграм" type="radio"><span class="main__span">Telegram</span></label>
+                                <label for="#"> <input name="v1" access="false" id="v1-0" required="required"
+                                        aria-required="true" value="Ватсап" type="radio"><span class="main__span">What's app</span></label>
+                                <label for="#"> <input name="v1" access="false" id="v1-0" required="required"
+                                        aria-required="true" value="По телефону" type="radio"><span class="main__span">По телефону</span></label>
+                            </div>
+                            <button type="submit">Задать вопрос</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+                        </div>
+                    </form>
+                </div>
+                <script>
+                    document.getElementById('number').onkeydown = function (e) {
+                        return !(/^[А-Яа-яA-Za-z ]$/.test(e.key));  // IE > 9
+                    }
+                </script>
+                <script>
+                    function openForm() {
+                        document.getElementById("myForm").style.display = "block";
+                    }
+
+                    function closeForm() {
+                        document.getElementById("myForm").style.display = "none";
+                    }
+                </script>
             </div>
-            <div class="main_open_form"><button class="open-button" onclick="openForm()">Задать вопрос</button> </div>
+            <div class="main_open_form"><button class="open-button" onclick="openForm()">Переключить форму</button> </div>
             </option>
-        </div>
         </div>
     </section>
     <!-- Футер -->
@@ -338,12 +332,7 @@
                 </div>
             </div>
             <div class="footer__contact">
-                <ul class="contact__list">
-                    <li class="contact__list-item"><i class="fa-solid fa-location-pin"></i>Екатеринбург, пр. Ленина, 49
-                    </li>
-                    <li class="contact__list-item"><i class="fa-solid fa-clock"></i>9:00 - 24:00 ежедневно</li>
-                    <li class="contact__list-item"><i class="fa-solid fa-phone-flip"></i>Телефон: 8-902-409-70-06</li>
-                </ul>
+                <a href="#">Политика конфидициальности</a>
             </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

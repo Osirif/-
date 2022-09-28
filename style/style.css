@@ -183,7 +183,7 @@ header a:hover{
     color: #1875d8;
 }
 
-.logiin{
+.logiin:hover{
     border-bottom: solid 2px #0063ce;
 }
 
@@ -273,41 +273,6 @@ border-radius: 5px;
     width: 16em;
     height: 13em;
     border-radius:70%;
-}
-
-
-/* Форма вопроса */
-
-.main_vopros{
-    display: none;
-}
- 
-input[type="submit"]{
-    border: none;
-    border-radius: 5px;
-    background-color: bisque;
-    padding: 0.5rem;
-}
-
-button:hover, 
-input[type="submit"]:hover{
-    background:rgb(243, 208, 166);
-}
-
-button{
-    display: flex;
-}
-
-.main_open_form{
-    display: flex;
-    padding-bottom: 20px;
-    margin-right: 2em;
-    
-    
-}
-
-.btn{
-    margin-top: 2em;
 }
 
 /* Логин стр */
@@ -502,6 +467,12 @@ footer{
     text-align: center;
 }
 
+.footer__inner a, p{
+    font-family: 'Rubik One', sans-serif;
+    color: #fff;
+    font-size: large;
+}
+
 .social__icon i {
     color: #08c;
     font-size: 24px;
@@ -514,6 +485,10 @@ footer{
 
 .social__icon {
     margin-top: 15px;
+}
+
+.contacts{
+    margin-top: 20px;
 }
 
 .contact__list-item {
@@ -630,8 +605,6 @@ footer{
   .form__btn{
     width: 15em;
     height: 2em;
-    padding-left: 3em;
-    padding-top: 0.4em;
   }
 
   button:hover{
@@ -647,3 +620,34 @@ footer{
     color: #fff;
     white-space: nowrap;
   }
+/* Форма вопроса */
+  .main_open_form{
+    display: flex;
+    padding-bottom: 20px;
+    margin-right: 2em;
+}
+
+.main_open_form button{
+    color:#002b6f ;
+    width: 15em;
+    height: 2em;
+}
+
+.main_open_form button:hover{
+    background: linear-gradient(45deg, #002b6f 33%, #0D61BC 66%, #8AA9D6);
+    color: #fff;
+}
+
+.vopros{
+    margin-left: 1em;
+    padding-right: 50px;
+}
+
+.vopros input, textarea{
+    width: 14em;
+}
+
+.zayavka_v{
+    display: none;
+    z-index: 9;
+}
