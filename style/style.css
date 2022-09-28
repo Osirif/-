@@ -193,7 +193,7 @@ header a:hover{
 /* Приветственный экран */
 .autoservice{
     background-image: url(../img/autoservice1.jpg);
-    min-height: 60vh;
+    min-height: 100vh;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -212,11 +212,11 @@ header a:hover{
 .autoservice_content_h1{
     color: #e5e5e5;
     text-align: left;
-    font-size: 48px;
+    font-size: 54px;
     margin-bottom: 20px;
 }
 .autoservice_content_p{
-    font-size: 24px;
+    font-size: 30px;
     text-align: left;
     color: #e5e5e5;
 }
@@ -451,7 +451,7 @@ margin-left: 12em;
 
 /* Футер */
 footer{
-    background: linear-gradient(45deg, #002b6f 33%, #0D61BC 66%, #8AA9D6);
+    background: #002b6f;
   }
   
   .footer__inner{
@@ -486,7 +486,7 @@ footer{
 .social__icon {
     margin-top: 15px;
 }
-
+/* Контакты */
 .contacts{
     margin-top: 20px;
 }
@@ -525,6 +525,10 @@ footer{
   .contacts__item{
     margin-bottom: 20px;
     font-size: 24px;
+  }
+
+  .contacts__item-text{
+    color: #000000;
   }
   
   .contacts__item-title{
