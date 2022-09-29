@@ -577,7 +577,7 @@ footer{
   }
   
   .main_zayavka{
-    background: linear-gradient(45deg, #02255f 33%, #0D61BC 66%, #8AA9D6); ;
+    background: #8AA9D6 ;
     padding: 40px 50px 36px;
     text-align: center;
   }
@@ -594,7 +594,7 @@ footer{
   margin: 20px auto;
 
   }
-  
+ 
   .contacts__title::after{
     background-color: #fff;
   }
@@ -652,6 +652,7 @@ footer{
     width: 15em;
     height: 2em;
     margin-top: 20px;
+    background-color: #08c;
   }
 
   button:hover{
@@ -699,4 +700,6 @@ footer{
     display: none;
     z-index: 9;
 }
-  
+   h3{
+    color: #000;
+  }
