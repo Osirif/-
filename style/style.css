@@ -122,6 +122,11 @@
     padding: 0 auto;
     list-style: none;
 }
+
+img {
+    width: 100%;
+  }
+
 a{
     text-decoration: none;
 }
@@ -260,20 +265,29 @@ background-color: #fff;
    margin-bottom: 20px;
 }
 .about_img{
+
     display: flex;
     justify-content: space-between;
     padding: 1em;
 
+
+ 
+
 }
 
 .about_img img{
-    width: 40%;
-    height: 18em;
+    width: 100%;
+     ;
 }
 
 .about p{
     font-size: 20px;
     margin: 2em;
+    color: #000;
+}
+
+.about__inner{
+    display: flex;
 }
 
 /* Отзывы */
@@ -662,3 +676,4 @@ footer{
     display: none;
     z-index: 9;
 }
+  
