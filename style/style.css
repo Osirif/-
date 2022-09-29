@@ -282,6 +282,8 @@ background-color: #fff;
 
 .about__inner{
     display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 /* Отзывы */
