@@ -559,7 +559,7 @@ footer{
   
   .main_zayavka{
     background: linear-gradient(45deg, #02255f 33%, #0D61BC 66%, #8AA9D6); ;
-    padding: 50px 75px 36px;
+    padding: 40px 50px 36px;
     text-align: center;
   }
   
@@ -582,27 +582,29 @@ footer{
   
   .main_zayavka input, textarea{
     background-color: transparent;
-    width: 15em;
-    height: 2em;
+    width: 13em;
+    height: 1em;
     color: #fff;
     border: 1px solid #fff;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     display: block;
-    font-size: 24px;
-    padding: 0 15px;
-    text-align: center;
+    font-size: 20px;
+    padding: 0 10px;
+    border-radius: 10px;
+  }
+
+  .maim_title{
+    margin-bottom: 1em;
   }
 
   .main__span{
     width: 15em;
     height: 2em;
     color: #fff;
-    margin-bottom: 12px;
     display: block;
     font-size: 24px;
     padding: 0 15px;
     text-align: center;
-    padding-top: 0.3em;
   }
 
   h3{
