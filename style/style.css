@@ -652,6 +652,7 @@ footer{
   .form__btn{
     width: 15em;
     height: 2em;
+    margin-top: 20px;
   }
 
   button:hover{
@@ -673,7 +674,7 @@ footer{
     width: 15em;
     height: 2em;
     color: #fff;
-    margin-top: 42px;
+    margin-top: 20px;
     cursor: pointer;
     font-family: 'Oswald', sans-serif;
     background: transparent;
