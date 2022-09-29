@@ -125,6 +125,7 @@
 a{
     text-decoration: none;
 }
+
 h2{
     font-family: 'Rubik One', sans-serif;
   font-size: 50px;
@@ -198,7 +199,6 @@ header a:hover{
     background-position: center;
     position: relative;
     align-content: center;
-    box-shadow:  0 5px 10px 0.5px #000000d9;
     height: 100%;
     width: 100%;
 }
@@ -225,10 +225,22 @@ header a:hover{
 .main_usluga1,
 .main_usluga2{
     display: flex;
+    justify-content: space-between;
     margin: 1em;
     text-align: center;
     font-weight:bold;
 }
+
+.main_usluga{
+    margin:0 4em ;
+}
+
+.main_usluga1 p,
+.main_usluga2 p{
+    color: #000000;
+    font-size: medium;
+}
+
 .main_usluga2{
 padding-bottom: 60px;
 }
@@ -254,9 +266,6 @@ border-radius: 5px;
     font-size: 20px;
     margin: 2em;
 }
-.about{
-    box-shadow:  0 5px 10px 0.5px #2a363b7d; 
-}
 
 /* Отзывы */
 .reviews{
@@ -265,8 +274,6 @@ border-radius: 5px;
     text-align: center;
     padding: 2em;
     background-color: #f4f4f4;
-    box-shadow:  0 5px 10px 0.5px #2a363b7d;
-  
 }
 
 .reviews img{
@@ -504,8 +511,6 @@ footer{
 }
 .fon {
     background-color: #f4f4f4;
-    box-shadow:  0 5px 10px 0.5px #2a363b7d;
-    
 }
 .footer_user_cab {
     margin-top: 250px;
