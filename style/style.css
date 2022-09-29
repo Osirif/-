@@ -122,6 +122,11 @@
     padding: 0 auto;
     list-style: none;
 }
+
+img {
+    width: 100%;
+  }
+
 a{
     text-decoration: none;
 }
@@ -660,3 +665,4 @@ footer{
     display: none;
     z-index: 9;
 }
+  
