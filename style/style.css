@@ -257,19 +257,22 @@ border-radius: 5px;
 
 /* О нас */
 .about_img{
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
+ 
 }
 
 .about_img img{
-    width: 40%;
-    height: 18em;
+    width: 100%;
+     ;
 }
 
 .about p{
     font-size: 20px;
     margin: 2em;
+    color: #000;
+}
+
+.about__inner{
+    display: flex;
 }
 
 /* Отзывы */
