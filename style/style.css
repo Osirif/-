@@ -143,7 +143,9 @@ h2{
   margin: 20px auto;
 
 }
-
+main{
+    background-color: #F4F4F4;
+}
 /* Шапка */
 header{
     display: flex;
@@ -152,7 +154,7 @@ header{
     font-size: large;
     font-weight: bolder;
     color: white;
-    width: 189vh;
+    height: 50px;
     z-index: 100;
     box-shadow: -0.4em 0.4em 5px rgba(1, 1, 1, 0.5);
     background: linear-gradient(45deg, #002b6f 33%, #0D61BC 66%, #8AA9D6);
@@ -218,10 +220,12 @@ header a:hover{
     color: #e5e5e5;
     text-align: left;
     font-size: 54px;
+    margin-top: 200px;
     margin-bottom: 20px;
 }
 .autoservice_content_p{
     font-size: 30px;
+    margin-top: 50px;
     text-align: left;
     color: #e5e5e5;
 }
@@ -256,8 +260,19 @@ border-radius: 5px;
 }
 
 /* О нас */
+.about {
+background-color: #fff; 
+   margin-bottom: 20px;
+}
 .about_img{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+
+
  
+
 }
 
 .about_img img{
@@ -277,18 +292,11 @@ border-radius: 5px;
 
 /* Отзывы */
 .reviews{
-    display: flex;
-    justify-content:space-between;
     text-align: center;
     padding: 2em;
     background-color: #f4f4f4;
 }
 
-.reviews img{
-    width: 16em;
-    height: 13em;
-    border-radius:70%;
-}
 
 /* Логин стр */
 
