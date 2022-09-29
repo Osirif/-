@@ -268,10 +268,7 @@ background-color: #fff;
 .about_title{
     padding-top: 20px;
 }
-iframe {
-    margin-top: 30px;
-    margin-left: 30px;
-}
+
 .about_img{
 
     padding: 1em;
@@ -477,13 +474,19 @@ margin-left: 12em;
 }
 
 /* Футер */
+
 footer{
-    background: #002b6f;
+    background: rgb(0,43,111);
+    display: flex;
+    
   }
   
+  .footer_p{
+    margin-right: 75px;
+    margin-top: 50px;
+  }
   .footer__inner{
-    display: flex;
-    justify-content: space-between;
+
     align-items: center;
     color: #fff;
     height: 100px;
@@ -500,6 +503,13 @@ footer{
     font-size: large;
 }
 
+.footer__links ul{
+    text-align: left;
+    margin-bottom: 100px;
+}
+.footer__links li{ 
+    margin-top: 20px;
+}
 .social__icon i {
     color: #08c;
     font-size: 24px;
@@ -512,6 +522,12 @@ footer{
 
 .social__icon {
     margin-top: 15px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.footer__contact  {
+    margin-left: 0px;
+    text-align: center;
 }
 /* Контакты */
 .contacts{
