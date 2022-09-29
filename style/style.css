@@ -645,23 +645,24 @@ footer{
     color: #fff;
     white-space: nowrap;
   }
-/* Форма вопроса */
-  .main_open_form{
-    display: flex;
-    padding-bottom: 20px;
-    margin-right: 2em;
-}
 
 .main_open_form button{
-    color:#002b6f ;
+    color:#ffffff ;
     width: 15em;
     height: 2em;
+    color: #fff;
+    margin-top: 42px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    background: transparent;
+    font-size: 24px
 }
 
 .main_open_form button:hover{
     background: linear-gradient(45deg, #002b6f 33%, #0D61BC 66%, #8AA9D6);
     color: #fff;
 }
+/* Форма вопроса */
 
 .vopros{
     margin-left: 1em;
