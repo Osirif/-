@@ -264,6 +264,11 @@ border-radius: 5px;
 background-color: #fff; 
    margin-bottom: 20px;
 }
+
+.about_title{
+    margin-top: 20px;
+}
+
 .about_img{
 
     padding: 1em;
