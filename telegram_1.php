@@ -1,11 +1,9 @@
 <?php
 /* сбор инфы в секции */
-$zayavka="____";
+$question="____";
 $marka = $_POST['marka'];
 $model = $_POST['model'];
 $problem = $_POST['problem'];
-$date = $_POST['date'];
-$probeg = $_POST['probeg'];
 $name = $_POST['name'];
 $last_name = $_POST['last_name'];
 $middle_name = $_POST['middle_name'];
@@ -21,17 +19,15 @@ $chat_id = "-748247926";
 /* коды */
 
 $arr = array(
-  '____ЗАЯВКА'=> $zayavka,
+  '____ВОПРОС'=> $question,
   'Марка машины: ' => $marka,
   'Модель: ' => $model,
   'Описание проблемы:' => $problem,
-  'Год выпуска: ' => $date,
-  'Пробег: ' => $probeg,
   'Фамилия: ' => $last_name,  
   'Имя: ' => $name,
   'Отчество: ' => $middle_name,
-  'Телефон: ' => $tel,
-  'Вид связи: ' => $v1,
+  'Телефон:' => $tel,
+  'Вид связи:' => $v1,
 ); 
 
 

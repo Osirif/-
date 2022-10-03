@@ -1,37 +1,35 @@
 <?php
 /* сбор инфы в секции */
-$zayavka="____";
+$zakaz="____";
+$zayavka=$_POST['zayavka'];
+$fio=$_POST['fio'];
+$tel=$_POST['tel'];
 $marka = $_POST['marka'];
 $model = $_POST['model'];
+$usluga=$_POST['usluga'];
 $problem = $_POST['problem'];
+$ispolnitel = $_POST['ispolnitel'];
+$zakazchik = $_POST['zakazchik'];
 $date = $_POST['date'];
-$probeg = $_POST['probeg'];
-$name = $_POST['name'];
-$last_name = $_POST['last_name'];
-$middle_name = $_POST['middle_name'];
-$tel=$_POST['tel'];
-$v1 = $_POST['v1'];
-
 
 $token = "5501594389:AAG0Mgv-_8pY3mQZb9_S0-kiphefSw8I7ss";
 $chat_id = "-748247926";
 
-
-
 /* коды */
 
 $arr = array(
-  '____ЗАЯВКА'=> $zayavka,
-  'Марка машины: ' => $marka,
-  'Модель: ' => $model,
-  'Описание проблемы:' => $problem,
-  'Год выпуска: ' => $date,
-  'Пробег: ' => $probeg,
-  'Фамилия: ' => $last_name,  
-  'Имя: ' => $name,
-  'Отчество: ' => $middle_name,
+  '____ЗАЯВКА'=> $zakaz,
+  'Заявка номер: ' => $zayavka,
+  'Фио клиента:' => $fio,
   'Телефон: ' => $tel,
-  'Вид связи: ' => $v1,
+  'Марка:'  => $marka,
+  'Модель: ' => $model,
+  'Услуги:' => $usluga,
+  'Описание проблемы:' => $problem,
+  'Исполнтитель:' => $ispolnitel,
+  'Заказчик:' => $zakazchik,
+  'Дата создания заказа:' => $date,
+
 ); 
 
 
