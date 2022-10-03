@@ -234,9 +234,10 @@ header a:hover{
 .main_usluga2{
     display: flex;
     justify-content: space-between;
-    margin: 1em;
+    margin: 50px;
     text-align: center;
     font-weight:bold;
+ 
 }
 
 .main_usluga{
@@ -345,6 +346,8 @@ img.avatar {
 
 .log button:hover {
     opacity: 0.8;
+    background-color: rgb(118,163,72);
+    color: #bbbbbb;
 }
 
 .log .cancelbtn {
@@ -704,4 +707,8 @@ footer{
 }
    h3{
     color: #000;
+  }
+
+  .hi:hover{
+    border: none;
   }
