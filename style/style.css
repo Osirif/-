@@ -141,7 +141,6 @@ h2{
   color: #0B2349;
   display: table;
   margin: 20px auto;
-
 }
 main{
     background-color: #F4F4F4;
@@ -577,7 +576,7 @@ footer{
   }
   
   .main_zayavka{
-    background: #8AA9D6 ;
+    background: linear-gradient(45deg, #002b6f 33%, #0D61BC 66%, #8AA9D6);
     padding: 40px 50px 36px;
     text-align: center;
   }
@@ -628,6 +627,10 @@ footer{
   h3{
     color: #fff;
   }
+
+  .main_zayavka h3{
+    color: #fff;
+  }
   
   .contacts__input::placeholder{
     text-align: center;
@@ -652,11 +655,10 @@ footer{
     width: 15em;
     height: 2em;
     margin-top: 20px;
-    background-color: #08c;
   }
 
   button:hover{
-    background: #0D61BC;
+    background: transparent;
     border: 1px solid #fff;
   }
 
