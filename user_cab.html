@@ -12,11 +12,22 @@
 
 <body>
     <header>
-        <span>Авто: Audi</span>
-        <span>Гос-номер: В201АФ</span>
-        <span>VIN-номер: 2342</span>
-        <a href="#">Сделать заявку</a>
-        <a href="index.html">Вернуться</a>
+
+        <div class="header__logo">
+            <a href="/index.html" class="hi"><img src="img/logo.png" alt="logo"></a>
+        </div>
+
+        <div class="header__services">
+            <a href="#services" class="white_a">Услуги</a>
+        </div>
+
+        <div class="header__about">
+            <a href="#about" class="white_a">О нас</a>
+        </div>
+
+        <div class="header__login">
+            <a href="index.html" class="logiin">Вернуться</a>
+        </div>
     </header>
     <main>
         <section class="uc">
@@ -36,10 +47,26 @@
                 </div>
                 <form action="#" class="uc__forma">
                     <div class="inside_serv">
-                        <span class="spann">Дата ремонта: 31.07.1900</span>
-                        <span class="spann">Пробег: 1000км</span>
-                        <span class="spann">Содержание ремонта: Ремонт и диагностика трансмисии, замена тормозных дисков</span>
-                        <p>Стоимость: 100000 р.</p>
+                        <div class="inside_serv_auto">
+                            <span><b>Авто:</b> Audi</span>
+                            <span><b>Гос-номер:</b> В201АФ</span>
+                            <span><b>VIN-номер:</b> 2342</span>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>Дата ремонта</th>
+                                <th>Пробег</th>
+                                <th>Стоимость</th>
+                                <th>Содержание ремонта</th>
+                            </tr>
+                            <tr>
+                                <td> 31.07.2022</td>
+                                <td>1000км</td>
+                                <td>50.000 р.</td>
+                                <td>Ремонт и диагностика трансмисии, замена тормозных дисков</td>
+                            </tr>
+                        </table>
+                        
                     </div>
                 </form>
             </div>
@@ -52,18 +79,17 @@
             width="1660" height="500" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="footer__inner">
-
             <div class="footer__social">
                 <p class="footer_p">Мы в соцсетях:</p>
                 <div class="social__icon">
                     <a href="https://t.me/+RkKhy1sFJYFmYTAy" class="social__icon-link"> TG<i
                             class="fa-brands fa-telegram"></i></a>
-                    <a href="https://t.me/+RkKhy1sFJYFmYTAy" class="social__icon-link">Whatsapp <i
-                            class="fa-brands fa-whatsapp"></i></a>
+                    <p>
+                        <a href="https://t.me/+RkKhy1sFJYFmYTAy" class="social__icon-link">Whatsapp <i
+                                class="fa-brands fa-whatsapp"></i></a>
+                    </p>
                 </div>
-
             </div>
-
             <div class="footer__links">
                 <ul>
                     <li><a href="#services">Услуги</a></li>

@@ -121,6 +121,7 @@
     margin: 0 auto;
     padding: 0 auto;
     list-style: none;
+    box-sizing: border-box;
 }
 
 .main_container{
@@ -437,12 +438,29 @@ margin-bottom: 25px;
     padding-top: 3em;
 }
 
+/* Страница user_cab */
+
 .spann{
     margin-right: 1em;
 }
 
-.inside_serv p{
-    margin-left: 13em;
+.inside_serv_auto{
+    display: flex;
+    border-bottom: solid 2px rgb(0,43,111);
+}
+
+table{
+    border-collapse: separate;
+    border-spacing: 20px;
+    text-align: center;
+}
+
+th{
+    width: 20%;
+}
+
+td{
+    width: 20%;
 }
 
 .section-title{
@@ -667,9 +685,6 @@ footer{
     font-size: 24px
 }
 
-.main_open_form button:hover{
-   
-}
    h3{
     color: #000;
   }
@@ -725,3 +740,62 @@ footer{
         opacity: 1
     }
 }
+
+/* Страница Услуги */
+.autoservices{
+    background-image: url(../img/services.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.column {
+    float: left;
+    width: 33%;
+    padding: 10px;
+    text-align: center;
+  }
+  .column p{
+    color: #000;
+  }
+
+  
+  /* Очистить поплавки после столбцов */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+<li><a href="">Ремонт автомобиля</a>
+  <ul>
+      <li>Ремонт двигателя</li>
+      <li>Ремонт электрооборудования</li>
+      <li>Ремонт кондиционера</li>
+      <li>Ремонт рулевого управления</li>
+      <li>Ремонт тормозной системы</li>
+      <li>Ремонт топливной системы</li>
+      <li>Ремонт ходовой/подвески</li>
+      <li>Ремонт трансмиссии</li>
+      <li>Ремонт системы охлаждения</li>
+      <li>Ремонт выхлопной системы</li>
+      <li>Ремонт автоэлектрики</li>
+  </ul>
+</li>
+
+<li><a href="">Диагностика автомобиля</a>
+  <ul>
+      <li>Диагностика двигателя</li>
+      <li>Диагностика ходовой</li>
+      <li>Диагностика тормозной системы</li>
+      <li>Диагностика топливной системы</li>
+      <li>Диагностика кондиционера</li>
+      <li>Диагностика перед покупкой</li>
+      <li>Диагностика электрики</li>
+  </ul>
+</li>
+</ul>  -->
